@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Detection</title>
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        input[type="text"] { width: 400px; padding: 8px; }
+        button { padding: 8px 16px; margin-left: 10px; }
+        #system_response { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Emotion Detector Application</h1>
+    <div>
+        <label for="textToAnalyze">Enter text for emotion analysis:</label><br><br>
+        <input type="text" id="textToAnalyze" name="textToAnalyze">
+        <button onclick="RunSentimentAnalysis()">Run Sentiment Analysis</button>
+    </div>
+    <div id="system_response"></div>
+</body>
+</html>
